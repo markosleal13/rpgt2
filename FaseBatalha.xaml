@@ -1,0 +1,47 @@
+﻿<Page
+    x:Class="RpgTelas.FaseBatalha"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:RpgTelas"
+    xmlns:canvas="using:Microsoft.Graphics.Canvas.UI.Xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Height="500"
+    Width="580"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Canvas Background="White">
+        <Image  Height="500" Width="580"  Source="Assets/Imagens/Fases/BATALHA.jpg" Stretch="Fill"/>
+        <Button x:Name="Voltar" Content="Escapar" Canvas.Left="499" Canvas.Top="463" Height="32" Width="81" Foreground="Black" Click="Voltar_Click" />
+        <Image x:Name="ImgMario" Height="150" Canvas.Top="334" Width="116" Source="Assets/Imagens/Personagens/Aliados/Mario2.png" Canvas.Left="10"/>
+        <Button  x:Name="AtkMario" Content="Atk" Canvas.Left="98" Canvas.Top="334"  Foreground="Black" Click="AtkMario_Click" Width="59"/>
+        <Button  x:Name="Recarregar" Content="Recarregar" Canvas.Left="98" Canvas.Top="371"  Foreground="Black" Click="Recarregar_Click" Width="86"/>
+        <Button  x:Name="AtirarMario" Content="Atirar" Canvas.Left="98" Canvas.Top="409"  Foreground="Black" Click="AtirarMario_Click" Width="59"/>
+        <Button  x:Name="CurarMario" Content="Curar" Canvas.Left="98" Canvas.Top="441"  Foreground="Black" Click="CurarMario_Click" Width="59"/>
+        <Button x:Name="Perder" Content="Perder" Canvas.Left="480" Canvas.Top="231" Height="38" Width="68" Click="Perder_Click"  Foreground="Black"/>
+        <Image x:Name="ImgLui" Height="102" Canvas.Left="191" Canvas.Top="355" Width="90" Source="Assets/Imagens/Personagens/Inimigos/LuigiTalarico.png" Stretch="Fill"/>
+        <Button x:Name="AtkLui" Content="Atk" Canvas.Left="270" Canvas.Top="350" Foreground="Black" Click="AtkLui_Click" Width="59"/>
+        <Button x:Name="Investida" Content="Investida" Canvas.Left="270" Canvas.Top="387" Foreground="Black" Click="Investida_Click" Width="74"/>
+        <Button x:Name="CurarLui" Content="Curar" Canvas.Left="270" Canvas.Top="425" Foreground="Black" Click="CurarLui_Click" Width="74"/>
+        <Image x:Name="ImgYo" Height="102" Canvas.Left="384" Canvas.Top="355" Width="90" Source="Assets/Imagens/Personagens/Inimigos/Yoshi.png"  Stretch="Fill"/>
+        <Button x:Name="AtkYo" Content="Atk" Canvas.Left="474" Canvas.Top="355" Click="AtkYo_Click" Foreground="Black"/>
+        <Button x:Name="Mordida" Content="Mordida" Canvas.Left="474" Canvas.Top="388" Click="Mordida_Click" Foreground="Black" Width="74"/>
+        <Button x:Name="CurarYo" Content="Curar" Canvas.Left="474" Canvas.Top="420" Foreground="Black" Click="CurarCo_Click" Width="74" RenderTransformOrigin="0.405,0.531"/>
+        <TextBlock x:Name="HpMario"  Foreground="Black" Canvas.Left="30" Canvas.Top="319" Text="TextBox" TextWrapping="Wrap" Height="32" Width="78"/>
+        <TextBlock x:Name="HpLui"  Foreground="Black" Canvas.Left="191" Canvas.Top="323" Text="TextBox" TextWrapping="Wrap" Height="32" Width="78"/>
+        <TextBlock x:Name="HpYo"  Foreground="Black" Canvas.Left="390" Canvas.Top="323" Text="TextBox" TextWrapping="Wrap" Height="32" Width="78"/>
+        <TextBlock x:Name="Carga"  Foreground="Black" Canvas.Left="21" Canvas.Top="454" Text="TextBox" TextWrapping="Wrap" Height="32" Width="109"/>
+        <TextBlock x:Name="Estamina"  Foreground="Black" Canvas.Left="197" Canvas.Top="452" Text="TextBox" TextWrapping="Wrap" Height="32" Width="99"/>
+        <TextBlock x:Name="Veneno"  Foreground="Black" Canvas.Left="390" Canvas.Top="457" Text="TextBox" TextWrapping="Wrap" Height="32" Width="103"/>
+        <Image x:Name="Pote" Height="31" Canvas.Left="10" Canvas.Top="10" Width="31"  Source="Assets/Imagens/Item/Pocao.png"  Stretch="Fill"/>
+        <Image x:Name="Municao" Height="31" Canvas.Left="10" Canvas.Top="59" Width="31"  Source="Assets/Imagens/Item/fogoup.png"  Stretch="Fill"/>
+        <TextBlock x:Name="PoteTxt"  Foreground="Black" Canvas.Left="54" Canvas.Top="16" Text="TextBox" TextWrapping="Wrap" Height="31"/>
+        <TextBlock x:Name="MuniTxt"  Foreground="Black" Canvas.Left="54" Canvas.Top="65" Text="TextBox" TextWrapping="Wrap" Height="31"/>
+        <Image x:Name="ImgInimigo" Height="124" Canvas.Left="234" Canvas.Top="34" Width="113"  Source="Assets/Imagens/maxresdefault.jpg"  Stretch="Fill"/>
+        <TextBlock x:Name="NomeInimigo" Canvas.Left="371" Canvas.Top="59" Text="TextBox" TextWrapping="Wrap" Width="79" Foreground="Black"/>
+        <TextBlock x:Name="HpInmigo" Canvas.Left="371" Canvas.Top="120" Text="TextBox" TextWrapping="Wrap" Width="79" Foreground="Black"/>
+        <TextBlock x:Name="MensagemDoMeio" Canvas.Left="54" Canvas.Top="216"  TextWrapping="Wrap" Height="71" Width="417"  Foreground="Black"/>
+
+    </Canvas>
+</Page>

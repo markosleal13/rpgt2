@@ -1,0 +1,18 @@
+﻿<Page
+    x:Class="RpgTelas.TelaDeFim"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:RpgTelas"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Height="500" 
+    Width="580"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Canvas>
+        <Image x:Name="TelaDeInicio" Height="500" Width="580" Source="ms-appx:///Assets/Imagens/Fases/Parabens.gif"  Stretch="Fill"/>
+        <Button Content="Jogar novamente" Canvas.Left="207" Canvas.Top="350" Height="86" Width="166" Click="Button_Click"/>
+        <Image  Height="197" Width="364" Source="ms-appx:///Assets/Imagens/Fases/Parabens.png"  Stretch="Fill" Canvas.Left="118" Canvas.Top="83"/>
+    </Canvas>
+</Page>

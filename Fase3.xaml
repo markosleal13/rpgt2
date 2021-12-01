@@ -1,0 +1,54 @@
+﻿<Page
+    x:Class="RpgTelas.Fase3"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:RpgTelas"
+    xmlns:canvas="using:Microsoft.Graphics.Canvas.UI.Xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Height="500"
+    Width="580"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Canvas Background="LimeGreen" Height="500" Width="580">
+        <Image  Height="500" Width="580"  Source="Assets/Imagens/Fases/Fase3ComBorda.jpg" Stretch="Fill"/>
+        <Image x:Name="ImgMario" Source="Assets/Imagens/Personagens/Aliados/Mario2.png" Width="50" Height="50" Canvas.Top="431" Canvas.Left="27"/>
+        <Button x:Name="BtnInv"  Height="60" Canvas.Left="482" Foreground="Black" Canvas.Top="10" Width="81" Click="BtnInv_Click">
+            <StackPanel Orientation="Horizontal">
+                <Image  Source="Assets/Imagens/Item/Mochila.png" Height="41" Width="55"  />
+            </StackPanel>
+        </Button>
+        <Canvas x:Name="Colidiveis" Height="500" Width="580" Canvas.Left="0" Canvas.Top="0">
+            <Image x:Name="bloco" Height="500" Width="9" Stretch="Fill"/>
+            <Image x:Name="bloco_1" Height="10" Canvas.Left="10" Width="570" Stretch="Fill"/>
+            <Image x:Name="bloco_2" Height="490" Canvas.Left="571" Canvas.Top="10" Width="9"  Stretch="Fill"/>
+            <Image x:Name="bloco_3" Height="8" Canvas.Left="10" Canvas.Top="492" Width="560"  Stretch="Fill"/>
+            <Image x:Name="bloco_4" Height="14" Canvas.Left="283" Canvas.Top="162" Width="151" Stretch="Fill"/>
+            <Image x:Name="bloco_5" Height="280" Canvas.Left="275" Width="15" Stretch="Fill" Canvas.Top="10"/>
+            <Image x:Name="bloco_6" Height="15" Canvas.Left="18" Canvas.Top="404" Width="444"  Stretch="Fill"/>
+            <Image x:Name="bloco_7" Height="141" Canvas.Left="355" Canvas.Top="98" Width="15"  Stretch="Fill"/>
+            <Image x:Name="bloco_8" Height="100" Canvas.Left="420" Canvas.Top="319" Width="14"  Stretch="Fill"/>
+            <Image x:Name="bloco_9" Height="16" Canvas.Left="18" Canvas.Top="258" Width="158"  Stretch="Fill"/>
+            <Image x:Name="bloco_10" Height="63" Canvas.Left="81" Canvas.Top="274" Width="14"  Stretch="Fill" RenderTransformOrigin="0.042,0.435"/>
+            <Image x:Name="inimigo" Height="43" Canvas.Left="311" Canvas.Top="36" Width="48"  Source="Assets/Imagens/Personagens/Inimigos/InimigSurpresa.png" Stretch="Fill"/>
+            <Image x:Name="inimigo_2" Height="43" Canvas.Left="213" Canvas.Top="196" Width="48"  Source="Assets/Imagens/Personagens/Inimigos/InimigSurpresa.png" Stretch="Fill"/>
+            <Image x:Name="inimigo_3" Height="43" Canvas.Left="302" Canvas.Top="260" Width="48" Source="Assets/Imagens/Personagens/Inimigos/InimigSurpresa.png" Stretch="Fill" RenderTransformOrigin="1.354,-2.733"/>
+            <Image x:Name="inimigo_4" Height="43" Canvas.Left="29" Canvas.Top="341" Width="48"  Source="Assets/Imagens/Personagens/Inimigos/InimigSurpresa.png" Stretch="Fill" RenderTransformOrigin="0.615,0.041"/>
+            <Image x:Name="inimigo_5" Height="43" Canvas.Left="202" Canvas.Top="436" Width="48"  Source="Assets/Imagens/Personagens/Inimigos/InimigSurpresa.png" Stretch="Fill"/>
+            <Image x:Name="inimigo_6" Height="43" Canvas.Left="29" Canvas.Top="125" Width="48"  Source="Assets/Imagens/Personagens/Inimigos/InimigSurpresa.png" Stretch="Fill"/>
+            <Image x:Name="inimigo_7" Height="43" Canvas.Left="111" Canvas.Top="47" Width="48" Source="Assets/Imagens/Personagens/Inimigos/InimigSurpresa.png" Stretch="Fill"/>
+            <Image x:Name="Chefe" Height="43" Canvas.Left="29" Canvas.Top="47" Width="48"  Source="Assets/Imagens/Personagens/Inimigos/Wario.png" Stretch="Fill"/>
+            <Image x:Name="pote" Height="43" Canvas.Left="152" Canvas.Top="339" Width="48"   Source="Assets/Imagens/Item/Pocao.png" Stretch="Fill"/>
+            <Image x:Name="pote_2" Height="43" Canvas.Left="359" Canvas.Top="436" Width="48"   Source="Assets/Imagens/Item/Pocao.png" Stretch="Fill"/>
+            <Image x:Name="pote_3" Height="43" Canvas.Left="339" Canvas.Top="339" Width="48"  Source="Assets/Imagens/Item/Pocao.png" Stretch="Fill"/>
+            <Image x:Name="pote_4" Height="43" Canvas.Left="442" Canvas.Top="68" Width="48"   Source="Assets/Imagens/Item/Pocao.png" Stretch="Fill"/>
+            <Image x:Name="pote_5" Height="43" Canvas.Left="111" Canvas.Top="157" Width="48"   Source="Assets/Imagens/Item/Pocao.png" Stretch="Fill"/>
+            <Image x:Name="tesouro" Height="43" Canvas.Left="299" Canvas.Top="191" Width="48"  Source="Assets/Imagens/Item/Tesouro.png" Stretch="Fill"/>
+            <Image x:Name="tesouro_2" Height="43" Canvas.Left="299" Canvas.Top="111" Width="48"  Source="Assets/Imagens/Item/Tesouro.png" Stretch="Fill"/>
+            <Image x:Name="tesouro_3" Height="43" Canvas.Left="18" Canvas.Top="282" Width="48"  Source="Assets/Imagens/Item/Tesouro.png" Stretch="Fill"/>
+            <Image x:Name="tesouro_4" Height="43" Canvas.Left="213" Canvas.Top="26" Width="48" Source="Assets/Imagens/Item/Tesouro.png" Stretch="Fill"/>
+            <Image x:Name="Vendedor" Height="49" Canvas.Left="533" Source="Assets/Imagens/Item/LojaVendedor.jpg" Canvas.Top="169" Width="33"/>
+        </Canvas>
+    </Canvas>
+</Page>
